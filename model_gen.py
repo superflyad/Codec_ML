@@ -105,7 +105,7 @@ model.add(Dense(len(elements), activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Define the checkpoint
-filepath = "model_weights_genI_complex_V1.hdf5"
+filepath = "model_weights_genI_complex_V1.keras"
 checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only=True, mode='min')
 callbacks_list = [checkpoint]
 
